@@ -7,7 +7,7 @@ export class BankingService {
     private http = inject(HttpClient);
 
     // Backend API URL for fetching account summary data.
-    private apiUrl = 'http://localhost:5237/api';
+    private apiUrl = 'https://banking-dashboard-backend.onrender.com/api';
 
     // This signal holds the fetched data and instantly updates the UI when changed
     summarySignal = signal<AccountSummary | null>(null);
